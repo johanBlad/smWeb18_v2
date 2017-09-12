@@ -124,6 +124,31 @@ hr.style {
         font-size: 1.25em;
         padding: 12px 0; } }
 
+.custom-nav-link-active {
+  color: white;
+  background-color: #a515ff;
+  border-radius: 5px
+}
+.custom-nav-link-active > a:hover,
+.custom-nav-link-active > a:focus {
+  color: white !important;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .custom-nav-link-active {
+    color: white;
+    background-color: #a515ff;
+    border-radius: 5px;
+  }
+  .custom-nav-link-active > a:hover,
+  .custom-nav-link-active > a:focus {
+  color: white !important;
+  background-color: #940db6;
+  border-radius: 5px;
+}
+
 header.masthead {
   text-align: center;
   color: white;
