@@ -148,6 +148,15 @@ hr.style {
   background-color: #940db6;
   border-radius: 5px;
 }
+}
+
+.about-picture {
+
+}
+@media (min-width: 768px) {
+  .about-picture {
+  }
+}
 
 header.masthead {
   text-align: center;
