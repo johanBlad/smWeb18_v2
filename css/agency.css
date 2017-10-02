@@ -150,18 +150,25 @@ hr.style {
 }
 }
 
-.about-picture {
+.about-div {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
 
+.about-picture {
+  max-width: 250px;
+  max-height: 250px;
 }
 @media (min-width: 768px) {
   .about-picture {
-  }
+
+  } 
 }
 
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/backgrounds/bg8.png");
+  background-image: url("../img/backgrounds/bg1.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -174,7 +181,6 @@ header.masthead {
     padding-bottom: 100px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 22px;
-      font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -191,8 +197,7 @@ header.masthead {
     padding-top: 300px;
     padding-bottom: 200px; }
     header.masthead .intro-text .intro-lead-in {
-      font-size: 40px;
-      font-style: italic;
+      font-size: 22px;
       line-height: 40px;
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
