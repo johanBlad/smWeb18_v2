@@ -42,14 +42,14 @@
               <a class="nav-link js-scroll-trigger" href="#about">Om</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Events</a>
+                <a class="nav-link js-scroll-trigger" href="#companies">Företag</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#events">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#schema">Schema</a>
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#företag">Företag</a>
-            </li>-->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
@@ -70,8 +70,28 @@
           <!--<div class="intro-lead-in">16 - 23 Februari 2018</div>-->
           
         </div>
-        <div style="text-align: center; position: relative; padding: 50px; margin: auto;">
-          <a class="c-more-btn btn btn-xl js-scroll-trigger" href="#about">Se mer</a>
+        <div class="intro-content">
+        <div style="position: relative;">
+        <div id="clockdiv">
+            <div>
+              <span class="days"></span>
+              <div class="smalltext">Dagar</div>
+            </div>
+            <div>
+              <span class="hours"></span>
+              <div class="smalltext">Timmar</div>
+            </div>
+            <div>
+              <span class="minutes"></span>
+              <div class="smalltext">Minuter</div>
+            </div>
+            <div>
+              <span class="seconds"></span>
+              <div class="smalltext">Sekunder</div>
+            </div>
+          </div>
+        </div>
+          <a class="btn btn-xl js-scroll-trigger" href="#about" >Se mer</a>
         </div>
       </div>
     </header>
@@ -121,8 +141,73 @@
       </div>
     </section>
 
+    <!-- Company Grid -->
+    <section class="bg-light portfolio" id="companies">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Företag</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-6 portfolio-item">
+              <a class="portfolio-link company" data-toggle="modal" href="#eventModal1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/SM-17/lunch3wd.jpg" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Accenture</h4>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-6 portfolio-item">
+              <a class="portfolio-link  company" data-toggle="modal" href="#eventModal2">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/SM-17/samsungHQ.jpg" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Academic Work</h4>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-6 portfolio-item">
+              <a class="portfolio-link company" data-toggle="modal" href="#eventModal3">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/SM-17/case1.jpg" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Google</h4>
+              </div>
+            </div>
+            <!--<div class="col-md-3 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#eventModal4">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/SM-17/interview1.jpg" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Kontaktsamtal</h4>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </section>
+
     <!-- Event Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="bg-light portfolio" id="events">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">

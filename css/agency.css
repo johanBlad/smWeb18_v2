@@ -253,16 +253,17 @@ header.masthead {
   margin: 15px 0;
   text-transform: none; }
 
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
   right: 0;
-  margin: 0 0 15px; }
-  #portfolio .portfolio-item .portfolio-link {
+  margin: 0 0 10px;
+ }
+  .portfolio .portfolio-item .portfolio-link {
     position: relative;
     display: block;
-    max-width: 400px;
     margin: 0 auto;
-    cursor: pointer; }
-    #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    cursor: pointer; 
+    }
+    .portfolio .portfolio-item .portfolio-link .portfolio-hover {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -270,10 +271,10 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background: rgba(254, 209, 54, 0.9); }
-      #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+      background: #b819ed }
+      .portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
         opacity: 1; }
-      #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+      .portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
         font-size: 20px;
         position: absolute;
         top: 50%;
@@ -282,31 +283,41 @@ header.masthead {
         margin-top: -12px;
         text-align: center;
         color: white; }
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+        .portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
           margin-top: -12px; }
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+        .portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+        .portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
           margin: 0; }
-  #portfolio .portfolio-item .portfolio-caption {
-    max-width: 400px;
+  .portfolio .portfolio-item .portfolio-caption {
+    max-width: 100px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 5px;
     text-align: center;
     background-color: white; }
-    #portfolio .portfolio-item .portfolio-caption h4 {
+    .portfolio .portfolio-item .portfolio-caption h4 {
       margin: 0;
-      text-transform: none; }
-    #portfolio .portfolio-item .portfolio-caption p {
+      text-transform: none;
+      font-size: 16px; }
+    .portfolio .portfolio-item .portfolio-caption p {
       font-size: 16px;
       font-style: italic;
       margin: 0;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
-#portfolio * {
+@media (min-width: 770px) {
+  .portfolio .portfolio-item .portfolio-caption {
+    max-width: 150px;
+    padding: 15px; }
+    .portfolio .portfolio-item .portfolio-caption h4 {
+      font-size: 20px; }
+    .portfolio .portfolio-item .portfolio-caption p {
+      font-size: 16px; } }
+
+.portfolio * {
   z-index: 2; }
 
 @media (min-width: 767px) {
-  #portfolio .portfolio-item {
+  .portfolio .portfolio-item {
     margin: 0 0 30px; } }
 
 .portfolio-modal .modal-dialog {
@@ -381,6 +392,16 @@ header.masthead {
 .portfolio-modal .modal-backdrop {
   display: none;
   opacity: 0; }
+
+.company {
+  max-width: 100px;
+}
+
+@media (min-width: 767px) {
+  .company {
+    max-width: 200px;
+  } }
+
 
 .timeline {
   position: relative;
@@ -712,8 +733,64 @@ ul.social-buttons {
   margin-bottom: 20px;
 }
 
-.c-more-btn {
-  bottom: 0;
-  
-  
+#clockdiv{
+	font-family: sans-serif;
+  color: rgb(87, 13, 139);
+	display: inline-block;
+	text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 15px auto;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  #clockdiv {
+    font-size: 30px;
+    margin: 15px auto;
+    margin-top: 0;
+  }
+}
+
+#clockdiv > div{
+	padding: 5px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+@media (min-width: 768px) {
+  #clockdiv > div{
+    padding: 10px;
+  }
+}
+
+#clockdiv div > span{
+	padding: 10px;
+	border-radius: 3px;
+	background: rgb(203, 172, 225);
+	display: inline-block;
+}
+
+@media (min-width: 768px) {
+  #clockdiv > div > span{
+    padding: 5px;
+  }
+}
+
+.smalltext{
+	padding-top: 0px;
+	font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .smalltext{
+    font-size: 16px;
+  }
+}
+
+.intro-content {
+  text-align: center; 
+  position: relative;  
+  margin: 50px auto;
+  height: 20vh;
 }
